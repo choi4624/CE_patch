@@ -10,6 +10,7 @@
 
 <!-- ========== SSH ========== -->
 
+				<!-- this is only working the Bulk value -->
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName="LnS_SSH"]/statBases</xpath>
 					<value>
@@ -19,26 +20,32 @@
 						<ArmorRating_Blunt>14</ArmorRating_Blunt>
 						<ArmorRating_Heat>0.4</ArmorRating_Heat>
 					</value>
-					
 				</li>
-
+				
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="LnS_SSH"]/statBases/StuffEffectMultiplierArmor</xpath>
 					<value>
 						<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
 					</value>
+				</li>
+				
+				<!-- defensive stat sharp and blunt, heat is not adjust -->
+				<li Class="PatchOperationReplace"
 					<xpath>Defs/ThingDef[defName="LnS_SSH"]/statBases/ArmorRating_Sharp</xpath>
 					<value>
 						<ArmorRating_Sharp>5.5</ArmorRating_Sharp>
 					</value>
+				/>
+				<li Class="PatchOperationReplace"
 					<xpath>Defs/ThingDef[defName="LnS_SSH"]/statBases/ArmorRating_Blunt</xpath>
 					<value>
 						<ArmorRating_Blunt>10</ArmorRating_Blunt>
-					</value>					
-				</li>
+					</value>		
+				/>
 
 <!-- ========== Altyn ========== -->
 
+				<!-- this is only working the Bulk value -->
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName="LnS_Altyn"]/statBases</xpath>
 					<value>
@@ -55,15 +62,21 @@
 					<value>
 						<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
 					</value>
-					<xpath>Defs/ThingDef[defName="LnS_SSH"]/statBases/ArmorRating_Sharp</xpath>
-					<value>
-						<ArmorRating_Sharp>14</ArmorRating_Sharp>
-					</value>
-					<xpath>Defs/ThingDef[defName="LnS_SSH"]/statBases/ArmorRating_Blunt</xpath>
-					<value>
-						<ArmorRating_Blunt>20</ArmorRating_Blunt>
-					</value>		
 				</li>
+
+				<!-- defensive stat sharp and blunt, heat is not adjust -->
+				<li Class="PatchOperationReplace"
+					<xpath>Defs/ThingDef[defName="LnS_Altyn"]/statBases/ArmorRating_Sharp</xpath>
+					<value>
+						<ArmorRating_Sharp>5.5</ArmorRating_Sharp>
+					</value>
+				/>
+				<li Class="PatchOperationReplace"
+					<xpath>Defs/ThingDef[defName="LnS_Altyn"]/statBases/ArmorRating_Blunt</xpath>
+					<value>
+						<ArmorRating_Blunt>10</ArmorRating_Blunt>
+					</value>		
+				/>
 			</operations>
 		</match>
 	</Operation>
