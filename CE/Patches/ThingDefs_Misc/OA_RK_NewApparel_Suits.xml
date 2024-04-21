@@ -28,7 +28,7 @@
 	</Operation>
 
     <Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="OA_RK_New_Windbreaker_A"]/statBases</xpath>
+		<xpath>Defs/ThingDef[defName="OA_RK_New_Windbreaker_A"]/statBases/StuffEffectMultiplierArmor</xpath>
 		<value>
 			<StuffEffectMultiplierArmor>2.2</StuffEffectMultiplierArmor>
 		</value>
