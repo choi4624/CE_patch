@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- to find the original item in annotation. Please looking at {root}\DEFS\Things_Apparel\Apparel_Suits.xml -->
+<Patch>
+    <!-- Multifunctional utility belt -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="OA_RK_Belt"]/statBases</xpath>
+		<value>
+			<Bulk>1.6</Bulk>
+			<WornBulk>1</WornBulk>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="OA_RK_Belt"]/statBases</xpath>
+		<value>
+			<ArmorRating_Sharp>0</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="OA_RK_Belt"]/statBases</xpath>
+		<value>
+			<ArmorRating_Blunt>0</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+</Patch>
