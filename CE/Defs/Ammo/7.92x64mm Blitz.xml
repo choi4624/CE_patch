@@ -33,7 +33,7 @@
 	<ThingDef Class="CombatExtended.AmmoDef" Name="792x64DUBase" ParentName="SmallAmmoBase" Abstract="True">
 		<description>Depleted uranium. Kill people imitate sacks when they are hit.</description>
 		<statBases>
-			<Mass>0.037</Mass>
+			<Mass>0.047</Mass>
 			<Bulk>0.03</Bulk>
 		</statBases>
 		<tradeTags>
@@ -54,7 +54,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>0.31</MarketValue>
-			<Mass>0.029</Mass>
+			<Mass>0.047</Mass>
 		</statBases>
 		<ammoClass>Sabot</ammoClass>
 		<cookOffProjectile>Bullet_792x64DU</cookOffProjectile>
@@ -94,14 +94,14 @@
 		<defName>Bullet_792x64DU_Adv</defName>
 		<label>7.92x64mm depleted uranium bullet</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>21</damageAmountBase>
+			<damageAmountBase>17</damageAmountBase>
 			<secondaryDamage>
 				<li>
 					<def>Flame_Secondary</def>
-					<amount>13</amount>
+					<amount>11</amount>
 				</li>
 			</secondaryDamage>
-			<armorPenetrationSharp>35</armorPenetrationSharp>
+			<armorPenetrationSharp>30</armorPenetrationSharp>
 			<armorPenetrationBlunt>189.12</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
