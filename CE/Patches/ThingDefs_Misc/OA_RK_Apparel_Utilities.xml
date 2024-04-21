@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- This is the remove the deffese value due to protect the item in CE. If you don't want this. Please remove the File. -->
+<!-- This is the remove the deffense value due to protect the item in CE. If you don't want this. Please remove the File. -->
 <Patch>
 
     <!-- to find the original item in annotation. Please looking at {root}\DEFS\Things_Apparel\Apparel_Suits.xml -->

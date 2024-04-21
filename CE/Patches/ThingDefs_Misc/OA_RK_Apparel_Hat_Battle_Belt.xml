@@ -34,6 +34,15 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="OA_RK_Armor_Hat_A"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<SmokeSensitivity>-1</SmokeSensitivity>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+
 	<!-- ========== 全防护突袭作战头盔 ========== -->
 
 	<Operation Class="PatchOperationAdd">
@@ -54,6 +63,15 @@
 		<xpath>Defs/ThingDef[defName="OA_RK_Armor_Hat_B"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
 			<ArmorRating_Blunt>45</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="OA_RK_Armor_Hat_B"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<SmokeSensitivity>-1</SmokeSensitivity>
+			</equippedStatOffsets>
 		</value>
 	</Operation>
 

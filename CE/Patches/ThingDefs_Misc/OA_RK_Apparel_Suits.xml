@@ -12,14 +12,14 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[@Name="OA_RK_ApparelBase"]/statBases</xpath>
 		<value>
-			<ArmorRating_Sharp>3</ArmorRating_Sharp>
+			<ArmorRating_Sharp>2</ArmorRating_Sharp>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[@Name="OA_RK_ApparelBase"]/statBases</xpath>
 		<value>
-			<ArmorRating_Blunt>2</ArmorRating_Blunt>
+			<ArmorRating_Blunt>3</ArmorRating_Blunt>
 		</value>
 	</Operation>
 
