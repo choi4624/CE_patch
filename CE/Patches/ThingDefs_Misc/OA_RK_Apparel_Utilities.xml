@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- This is the remove the deffense value due to protect the item in CE. If you don't want this. Please remove the File. -->
+    <!-- this is moved from OK_RK_Apparel_Suits.xml due to Utilities has no value error-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@Name="OA_RK_ApparelBase"]/statBases</xpath>
+        <value>
+            <Bulk>1</Bulk>
+            <WornBulk>0.7</WornBulk>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@Name="OA_RK_ApparelBase"]/statBases</xpath>
+        <value>
+            <ArmorRating_Sharp>2</ArmorRating_Sharp>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@Name="OA_RK_ApparelBase"]/statBases</xpath>
+        <value>
+            <ArmorRating_Blunt>3</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+<!-- This is the remove the deffense value to protect the item in CE. If you don't want this. Please remove the File. -->
 <Patch>
 
     <!-- to find the original item in annotation. Please looking at {root}\DEFS\Things_Apparel\Apparel_Suits.xml -->
