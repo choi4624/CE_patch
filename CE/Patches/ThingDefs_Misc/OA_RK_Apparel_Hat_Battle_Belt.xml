@@ -30,7 +30,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="OA_RK_Armor_Hat_A"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
-			<ArmorRating_Blunt>26</ArmorRating_Blunt>
+			<ArmorRating_Blunt>35</ArmorRating_Blunt>
 		</value>
 	</Operation>
 
@@ -49,6 +49,7 @@
 		<xpath>Defs/ThingDef[defName="OA_RK_Armor_Hat_B"]/statBases</xpath>
 		<value>
 			<Bulk>1</Bulk>
+			<NightVisionEfficiency_Apparel>0.7</NightVisionEfficiency_Apparel>
 		</value>
 	</Operation>
 
@@ -62,7 +63,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="OA_RK_Armor_Hat_B"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
-			<ArmorRating_Blunt>45</ArmorRating_Blunt>
+			<ArmorRating_Blunt>50</ArmorRating_Blunt>
 		</value>
 	</Operation>
 

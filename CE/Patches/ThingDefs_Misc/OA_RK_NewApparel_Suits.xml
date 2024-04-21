@@ -74,6 +74,7 @@
 		</value>
 	</Operation>
 
+    <!-- this armor is compared with Cataphract armor in the royalty. It is better to use due to better durability. (plasteel * 2.8 bonus) -->
     <Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="OA_RK_New_Windbreaker_E"]/statBases/ArmorRating_Sharp</xpath>
 		<value>
@@ -84,22 +85,22 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="OA_RK_New_Windbreaker_E"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
-			<ArmorRating_Blunt>24</ArmorRating_Blunt>
+			<ArmorRating_Blunt>32</ArmorRating_Blunt>
 		</value>
 	</Operation>
 
     <Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="OA_RK_New_Windbreaker_E"]/statBases</xpath>
 		<value>
-			<StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>5</StuffEffectMultiplierArmor>
 		</value>
     </Operation>
     
-    <!-- Experimental, this is use more stuff and give bonus to StuffEffectMultiplierArmor -->
+    <!-- Experimental, this is use more stuff and give bonus to StuffEffectMultiplierArmor. CE only! -->
     <Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="OA_RK_New_Windbreaker_E"]</xpath>
             <value>
-                <costStuffCount>120</costStuffCount>
+                <costStuffCount>400</costStuffCount>
             </value>
     </Operation>
 
@@ -111,6 +112,7 @@
                 </stuffCategories>
             </value>
     </Operation>
+    <!-- experimental end -->
 
 
 
