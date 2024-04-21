@@ -35,6 +35,8 @@
 		</value>
 	</Operation>
 
+    <!-- the class of the '@Name=OA_RK_ApparelBase' patch is already exist below patch is work or not randomly  -->
+
     <Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="OA_RK_Component_D"]/statBases/ArmorRating_Sharp</xpath>
 		<value>
