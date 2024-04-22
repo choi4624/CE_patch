@@ -1,5 +1,233 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
+    <!-- Changjiangren Bumianjia -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMACNMeleeArmor"]/statBases</xpath>
+        <value>
+            <Bulk>4.6</Bulk>
+            <WornBulk>1.5</WornBulk>
+        </value>
+    </Operation>
 
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMACNMeleeArmor"]/statBases</xpath>
+        <value>
+            <ArmorRating_Sharp>8</ArmorRating_Sharp>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMACNMeleeArmor"]/statBases</xpath>
+        <value>
+            <ArmorRating_Blunt>12</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+
+    <!-- Dongyang Gov. Bandolier -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMACNBandolier"]/statBases</xpath>
+        <value>
+            <Bulk>1.6</Bulk>
+            <WornBulk>0.8</WornBulk>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMACNBandolier"]/statBases</xpath>
+        <value>
+            <ArmorRating_Sharp>2</ArmorRating_Sharp>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMACNBandolier"]/statBases</xpath>
+        <value>
+            <ArmorRating_Blunt>4</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+    <!-- Dongyang Gov. Flack Vest -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMACNFlakVest"]/statBases</xpath>
+        <value>
+            <Bulk>4.6</Bulk>
+            <WornBulk>4.8</WornBulk>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMACNFlakVest"]/statBases</xpath>
+        <value>
+            <ArmorRating_Sharp>9</ArmorRating_Sharp>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMACNFlakVest"]/statBases</xpath>
+        <value>
+            <ArmorRating_Blunt>13</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AMACNFlakVest"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>2.2</StuffEffectMultiplierArmor>
+		</value>
+    </Operation>
+
+<!-- KR -->
+    <!-- Rep. of Shinjin Suspender -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMAKRSuspender"]/statBases</xpath>
+        <value>
+            <Bulk>1.6</Bulk>
+            <WornBulk>1.8</WornBulk>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMAKRSuspender"]/statBases</xpath>
+        <value>
+            <ArmorRating_Sharp>2</ArmorRating_Sharp>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMACNFlakVest"]/statBases</xpath>
+        <value>
+            <ArmorRating_Blunt>4</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+    <!-- Bandoin Dujeonggap -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMAKRDujeonggap"]/statBases</xpath>
+        <value>
+            <Bulk>4.6</Bulk>
+            <WornBulk>4.8</WornBulk>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMAKRDujeonggap"]/statBases</xpath>
+        <value>
+            <ArmorRating_Sharp>12</ArmorRating_Sharp>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMAKRDujeonggap"]/statBases</xpath>
+        <value>
+            <ArmorRating_Blunt>8</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AMAKRDujeonggap"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>2.2</StuffEffectMultiplierArmor>
+		</value>
+    </Operation>
+
+<!-- JP -->
+    <!-- Empire of Dai-Kagejima Warbelt -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMAJPWarBelt"]/statBases</xpath>
+        <value>
+            <Bulk>1.6</Bulk>
+            <WornBulk>1.8</WornBulk>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMAJPWarBelt"]/statBases</xpath>
+        <value>
+            <ArmorRating_Sharp>2</ArmorRating_Sharp>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMAJPWarBelt"]/statBases</xpath>
+        <value>
+            <ArmorRating_Blunt>4</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+    <!-- Shimabito Toseigusoku -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMAJPToseigusoku"]/statBases</xpath>
+        <value>
+            <Bulk>2.6</Bulk>
+            <WornBulk>2.8</WornBulk>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMAJPToseigusoku"]/statBases</xpath>
+        <value>
+            <ArmorRating_Sharp>6</ArmorRating_Sharp>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMAJPToseigusoku"]/statBases</xpath>
+        <value>
+            <ArmorRating_Blunt>10</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AMAJPToseigusoku"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>4.0</StuffEffectMultiplierArmor>
+		</value>
+    </Operation>
+
+    <!-- Empire of Dai-Kagejima Flak Armor -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMAJPFlakVest"]/statBases</xpath>
+        <value>
+            <Bulk>5.6</Bulk>
+            <WornBulk>5.8</WornBulk>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMAJPFlakVest"]/statBases</xpath>
+        <value>
+            <ArmorRating_Sharp>10</ArmorRating_Sharp>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMAJPEliteArmor"]/statBases</xpath>
+        <value>
+            <ArmorRating_Blunt>14</ArmorRating_Blunt>
+        </value>
+    </Operation>
     
+    <!-- Empire of Dai-Kagejima Elite Armor -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMAJPEliteArmor"]/statBases</xpath>
+        <value>
+            <Bulk>9.6</Bulk>
+            <WornBulk>9.8</WornBulk>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMAJPEliteArmor"]/statBases</xpath>
+        <value>
+            <ArmorRating_Sharp>14</ArmorRating_Sharp>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMAJPEliteArmor"]/statBases</xpath>
+        <value>
+            <ArmorRating_Blunt>18</ArmorRating_Blunt>
+        </value>
+    </Operation>
 </Patch>
