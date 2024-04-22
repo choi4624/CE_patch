@@ -13,12 +13,6 @@
         <xpath>Defs/ThingDef[defName="AMACNMeleeArmor"]/statBases</xpath>
         <value>
             <ArmorRating_Sharp>8</ArmorRating_Sharp>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="AMACNMeleeArmor"]/statBases</xpath>
-        <value>
             <ArmorRating_Blunt>12</ArmorRating_Blunt>
         </value>
     </Operation>
@@ -37,12 +31,6 @@
         <xpath>Defs/ThingDef[defName="AMACNBandolier"]/statBases</xpath>
         <value>
             <ArmorRating_Sharp>2</ArmorRating_Sharp>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="AMACNBandolier"]/statBases</xpath>
-        <value>
             <ArmorRating_Blunt>4</ArmorRating_Blunt>
         </value>
     </Operation>
@@ -60,12 +48,6 @@
         <xpath>Defs/ThingDef[defName="AMACNFlakVest"]/statBases</xpath>
         <value>
             <ArmorRating_Sharp>9</ArmorRating_Sharp>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="AMACNFlakVest"]/statBases</xpath>
-        <value>
             <ArmorRating_Blunt>13</ArmorRating_Blunt>
         </value>
     </Operation>
@@ -91,12 +73,6 @@
         <xpath>Defs/ThingDef[defName="AMAKRSuspender"]/statBases</xpath>
         <value>
             <ArmorRating_Sharp>2</ArmorRating_Sharp>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="AMACNFlakVest"]/statBases</xpath>
-        <value>
             <ArmorRating_Blunt>4</ArmorRating_Blunt>
         </value>
     </Operation>
@@ -114,15 +90,11 @@
         <xpath>Defs/ThingDef[defName="AMAKRDujeonggap"]/statBases</xpath>
         <value>
             <ArmorRating_Sharp>10</ArmorRating_Sharp>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="AMAKRDujeonggap"]/statBases</xpath>
-        <value>
             <ArmorRating_Blunt>8</ArmorRating_Blunt>
         </value>
     </Operation>
+
+
 
     <Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="AMAKRDujeonggap"]/statBases/StuffEffectMultiplierArmor</xpath>
@@ -146,12 +118,6 @@
         <xpath>Defs/ThingDef[defName="AMAJPWarBelt"]/statBases</xpath>
         <value>
             <ArmorRating_Sharp>2</ArmorRating_Sharp>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="AMAJPWarBelt"]/statBases</xpath>
-        <value>
             <ArmorRating_Blunt>4</ArmorRating_Blunt>
         </value>
     </Operation>
@@ -169,15 +135,10 @@
         <xpath>Defs/ThingDef[defName="AMAJPToseigusoku"]/statBases</xpath>
         <value>
             <ArmorRating_Sharp>6</ArmorRating_Sharp>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="AMAJPToseigusoku"]/statBases</xpath>
-        <value>
             <ArmorRating_Blunt>10</ArmorRating_Blunt>
         </value>
     </Operation>
+
 
     <Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="AMAJPToseigusoku"]/statBases/StuffEffectMultiplierArmor</xpath>
@@ -200,15 +161,10 @@
         <xpath>Defs/ThingDef[defName="AMAJPFlakVest"]/statBases</xpath>
         <value>
             <ArmorRating_Sharp>10</ArmorRating_Sharp>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="AMAJPFlakVest"]/statBases</xpath>
-        <value>
             <ArmorRating_Blunt>14</ArmorRating_Blunt>
         </value>
     </Operation>
+
     
 
     <!-- Empire of Dai-Kagejima Elite Armor -->
@@ -224,13 +180,8 @@
         <xpath>Defs/ThingDef[defName="AMAJPEliteArmor"]/statBases</xpath>
         <value>
             <ArmorRating_Sharp>14</ArmorRating_Sharp>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="AMAJPEliteArmor"]/statBases</xpath>
-        <value>
             <ArmorRating_Blunt>12</ArmorRating_Blunt>
         </value>
     </Operation>
+
 </Patch>
