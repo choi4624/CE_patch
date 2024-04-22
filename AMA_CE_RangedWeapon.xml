@@ -224,4 +224,142 @@
             </value>
         </Operation>
     
+    <!-- AMAGun_SMG -->
+        <!-- onehand YES -->
+        <Operation Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="AMAGun_GrenadeLauncher"]/weaponTags</xpath>
+            <value>
+                <li>CE_OneHandedWeapon</li>
+            </value>
+        </Operation>    
+
+        <!-- power -->
+        <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+            <defName>AMAGun_GrenadeLauncher</defName>
+            <statBases>
+                <RangedWeapon_Cooldown>3.1</RangedWeapon_Cooldown>
+                <SightsEfficiency>0.65</SightsEfficiency>
+                <ShotSpread>0.20</ShotSpread>
+                <SwayFactor>2.14</SwayFactor>
+                <Bulk>5.76</Bulk>
+                <Mass>2.50</Mass>
+            </statBases>
+            <Properties>
+                <recoilAmount>2.87</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>AMA_40mmGrenade</defaultProjectile>
+                <warmupTime>1.05</warmupTime>
+                <range>55</range>
+                <burstShotCount>1</burstShotCount>
+                <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+                <soundCast>Shot_IncendiaryLauncher</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </Properties>
+            <AmmoUser>
+                <magazineSize>3</magazineSize>
+                <reloadTime>6</reloadTime>
+                <ammoSet>Ammo40x46mmGrenades</ammoSet>
+            </AmmoUser>
+            <FireModes>
+                <aiAimMode>Snapshot</aiAimMode>
+            </FireModes>
+            <weaponTags>
+                <li>AMASurplus</li>
+                <li>GunHeavy</li>
+                <li>CE_AI_AOE</li>
+            </weaponTags>
+            <AllowWithRunAndGun>false</AllowWithRunAndGun>
+        </Operation>
+    
+        <Operation Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="AMAGPMG"]/tools</xpath>
+            <value>
+                <tools>
+                    <li Class="CombatExtended.ToolCE">
+                        <label>개머리판</label>
+                        <capacities>
+                            <li>Blunt</li>
+                        </capacities>
+                        <power>12</power>
+                        <cooldownTime>1.20</cooldownTime>
+                        <chanceFactor>1.5</chanceFactor>
+                        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                        <armorPenetrationSharp>0.5</armorPenetrationSharp>
+                        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+                </li>
+                </tools>
+            </value>
+        </Operation>
+    
+
+    <!-- AMAGun_RecoillessGun -->  
+    <!-- 81mm launcher -->  
+
+        <!-- power -->
+        <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+            <defName>AMAGun_RecoillessGun</defName>
+            <statBases>
+                <RangedWeapon_Cooldown>3.1</RangedWeapon_Cooldown>
+                <SightsEfficiency>1.05</SightsEfficiency>
+                <ShotSpread>0.11</ShotSpread>
+                <SwayFactor>4.80</SwayFactor>
+                <Bulk>25.70</Bulk>
+                <Mass>17.50</Mass>
+            </statBases>
+            <Properties>
+                <recoilAmount>6.87</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_HERound</defaultProjectile>
+                <warmupTime>4.55</warmupTime>
+                <range>75</range>
+                <burstShotCount>1</burstShotCount>
+                <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+                <ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
+                <soundCast>AMARecoillessGunShot</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>14</muzzleFlashScale>
+                <onlyManualCast>true</onlyManualCast>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                  </targetParams>
+            </Properties>
+            <AmmoUser>
+                <magazineSize>1</magazineSize>
+                <reloadTime>15</reloadTime>
+                <ammoSet>AmmoSet_81mmMortarShell</ammoSet>
+            </AmmoUser>
+            <FireModes>
+                <aiAimMode>Snapshot</aiAimMode>
+            </FireModes>
+            <weaponTags>
+                <li>AMASurplus</li>
+                <li>GunHeavy</li>
+                <li>CE_AI_AOE</li>
+            </weaponTags>
+            <AllowWithRunAndGun>false</AllowWithRunAndGun>
+        </Operation>
+    
+        <Operation Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="AMAGun_RecoillessGun"]/tools</xpath>
+            <value>
+                <tools>
+                    <li Class="CombatExtended.ToolCE">
+                        <label>개머리판</label>
+                        <capacities>
+                            <li>Blunt</li>
+                        </capacities>
+                        <power>12</power>
+                        <cooldownTime>1.20</cooldownTime>
+                        <chanceFactor>1.5</chanceFactor>
+                        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                        <armorPenetrationSharp>0.5</armorPenetrationSharp>
+                        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+                </li>
+                </tools>
+            </value>
+        </Operation>
+
 </Patch>

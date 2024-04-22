@@ -357,7 +357,7 @@
         </Operation>
 
     <!-- AMAGun_ElectroCharger --> 
-    <!-- 12gauge shooter -->
+    <!-- 12gauge long range shooter -->
 
         <!-- power -->
         <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
@@ -375,10 +375,10 @@
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass> 
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>AMABullet_Overvoltage</defaultProjectile> 
-                <warmupTime>2.30</warmupTime> 
+                <warmupTime>4.30</warmupTime> 
                 <range>85</range> 
                 <burstShotCount>30</burstShotCount> 
-                <ticksBetweenBurstShots>5</ticksBetweenBurstShots> 
+                <ticksBetweenBurstShots>1</ticksBetweenBurstShots> 
                 <soundCast>AMAElectroChargerShot</soundCast> 
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
@@ -396,8 +396,8 @@
             
             <!-- AI treat this item as -->
             <weaponTags>
-                <li>SniperRifle</li>
-                <li>CE_AI_SR</li>
+                <li>GunHeavy</li>
+                <li>CE_AI_AOE</li>
                 <li>AMAModernized</li>
                 <li>AdvancedGun</li>
                 <li>SpacerGun</li>
