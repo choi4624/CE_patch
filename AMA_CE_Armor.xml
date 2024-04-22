@@ -69,7 +69,7 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationReplace">
+    <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="AMAKRSuspender"]/statBases</xpath>
         <value>
             <ArmorRating_Sharp>2</ArmorRating_Sharp>
@@ -131,7 +131,7 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationReplace">
+    <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="AMAJPWarBelt"]/statBases</xpath>
         <value>
             <ArmorRating_Sharp>2</ArmorRating_Sharp>
@@ -174,7 +174,7 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationReplace">
+    <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="AMAJPFlakVest"]/statBases</xpath>
         <value>
             <ArmorRating_Sharp>10</ArmorRating_Sharp>
@@ -193,7 +193,7 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationReplace">
+    <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="AMAJPEliteArmor"]/statBases</xpath>
         <value>
             <ArmorRating_Sharp>14</ArmorRating_Sharp>

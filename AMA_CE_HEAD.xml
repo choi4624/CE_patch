@@ -9,7 +9,7 @@
             </value>
         </Operation>
     
-        <Operation Class="PatchOperationReplace">
+        <Operation Class="PatchOperationAdd">
             <xpath>Defs/ThingDef[defName="AMANewHelmetJP"]/statBases</xpath>
             <value>
                 <ArmorRating_Sharp>20</ArmorRating_Sharp>
