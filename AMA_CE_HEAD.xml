@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+        <!-- Empire of Dai-Kagejima Eilte helmet -->
+        <Operation Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="AMANewHelmetJP"]/statBases</xpath>
+            <value>
+                <Bulk>8.6</Bulk>
+                <WornBulk>8.5</WornBulk>
+            </value>
+        </Operation>
+    
+        <Operation Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="AMANewHelmetJP"]/statBases</xpath>
+            <value>
+                <ArmorRating_Sharp>20</ArmorRating_Sharp>
+            </value>
+        </Operation>
+    
+        <Operation Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="AMANewHelmetJP"]/statBases</xpath>
+            <value>
+                <ArmorRating_Blunt>42</ArmorRating_Blunt>
+            </value>
+        </Operation>
+
+        <!-- CE smoke sensitivity -->
+        <Operation Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="AMANewHelmetJP"]</xpath>
+            <value>
+                <equippedStatOffsets>
+                    <SmokeSensitivity>-1</SmokeSensitivity>
+                </equippedStatOffsets>
+            </value>
+        </Operation>
+
+
+        <!-- Empire of Dai-Kagejima Kabuto -->
+        <Operation Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="AMAJPKabuto"]/statBases</xpath>
+            <value>
+                <Bulk>8.6</Bulk>
+                <WornBulk>8.5</WornBulk>
+            </value>
+        </Operation>
+    
+        <Operation Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="AMAJPKabuto"]/statBases</xpath>
+            <value>
+                <ArmorRating_Sharp>12</ArmorRating_Sharp>
+            </value>
+        </Operation>
+    
+        <Operation Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="AMAJPKabuto"]/statBases</xpath>
+            <value>
+                <ArmorRating_Blunt>8</ArmorRating_Blunt>
+            </value>
+        </Operation>
+
+        <!-- Rep. of Shinjin riot helmet -->
+        <Operation Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="AMAKRRiotHelmet"]/statBases</xpath>
+            <value>
+                <Bulk>8.6</Bulk>
+                <WornBulk>8.5</WornBulk>
+            </value>
+        </Operation>
+    
+        <Operation Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="AMAKRRiotHelmet"]/statBases</xpath>
+            <value>
+                <ArmorRating_Sharp>8</ArmorRating_Sharp>
+            </value>
+        </Operation>
+    
+        <Operation Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="AMAKRRiotHelmet"]/statBases</xpath>
+            <value>
+                <ArmorRating_Blunt>12</ArmorRating_Blunt>
+            </value>
+        </Operation>
+
+        <!-- Rep. of Shinjin New Bulletproof Helmet -->
+        <Operation Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="AMANewHelmetKR"]/statBases</xpath>
+            <value>
+                <Bulk>8.6</Bulk>
+                <WornBulk>8.5</WornBulk>
+            </value>
+        </Operation>
+    
+        <Operation Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="AMANewHelmetKR"]/statBases</xpath>
+            <value>
+                <ArmorRating_Sharp>13</ArmorRating_Sharp>
+            </value>
+        </Operation>
+    
+        <Operation Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="AMANewHelmetKR"]/statBases</xpath>
+            <value>
+                <ArmorRating_Blunt>10</ArmorRating_Blunt>
+            </value>
+        </Operation>
+        
+</Patch>

@@ -105,15 +105,15 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="AMAKRDujeonggap"]/statBases</xpath>
         <value>
-            <Bulk>4.6</Bulk>
-            <WornBulk>4.8</WornBulk>
+            <Bulk>9.6</Bulk>
+            <WornBulk>8.8</WornBulk>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="AMAKRDujeonggap"]/statBases</xpath>
         <value>
-            <ArmorRating_Sharp>12</ArmorRating_Sharp>
+            <ArmorRating_Sharp>10</ArmorRating_Sharp>
         </value>
     </Operation>
 
@@ -132,12 +132,13 @@
     </Operation>
 
 <!-- JP -->
+
     <!-- Empire of Dai-Kagejima Warbelt -->
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="AMAJPWarBelt"]/statBases</xpath>
         <value>
-            <Bulk>1.6</Bulk>
-            <WornBulk>1.8</WornBulk>
+            <Bulk>5.6</Bulk>
+            <WornBulk>6.8</WornBulk>
         </value>
     </Operation>
 
@@ -159,8 +160,8 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="AMAJPToseigusoku"]/statBases</xpath>
         <value>
-            <Bulk>2.6</Bulk>
-            <WornBulk>2.8</WornBulk>
+            <Bulk>9.6</Bulk>
+            <WornBulk>9.8</WornBulk>
         </value>
     </Operation>
 
@@ -185,12 +186,13 @@
 		</value>
     </Operation>
 
+
     <!-- Empire of Dai-Kagejima Flak Armor -->
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="AMAJPFlakVest"]/statBases</xpath>
         <value>
-            <Bulk>5.6</Bulk>
-            <WornBulk>5.8</WornBulk>
+            <Bulk>10.6</Bulk>
+            <WornBulk>10.8</WornBulk>
         </value>
     </Operation>
 
@@ -202,18 +204,19 @@
     </Operation>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="AMAJPEliteArmor"]/statBases</xpath>
+        <xpath>Defs/ThingDef[defName="AMAJPFlakVest"]/statBases</xpath>
         <value>
             <ArmorRating_Blunt>14</ArmorRating_Blunt>
         </value>
     </Operation>
     
+
     <!-- Empire of Dai-Kagejima Elite Armor -->
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="AMAJPEliteArmor"]/statBases</xpath>
         <value>
-            <Bulk>9.6</Bulk>
-            <WornBulk>9.8</WornBulk>
+            <Bulk>13.6</Bulk>
+            <WornBulk>12.8</WornBulk>
         </value>
     </Operation>
 
@@ -227,7 +230,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="AMAJPEliteArmor"]/statBases</xpath>
         <value>
-            <ArmorRating_Blunt>18</ArmorRating_Blunt>
+            <ArmorRating_Blunt>12</ArmorRating_Blunt>
         </value>
     </Operation>
 </Patch>
