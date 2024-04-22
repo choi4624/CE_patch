@@ -4,6 +4,9 @@
         <!-- power -->
         <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
             <defName>AMAGPMG</defName>
+            <weaponClasses>
+                <li>RangedHeavy</li>
+            </weaponClasses>
             <statBases>
                 <RangedWeapon_Cooldown>2.4</RangedWeapon_Cooldown>
                 <SightsEfficiency>0.65</SightsEfficiency>
@@ -37,6 +40,9 @@
             </FireModes>
             <weaponTags>
                 <li>AMAHeavy</li>
+                <li>IndustrialGunAdvanced</li>
+                <li>CE_MachineGun</li>
+                <li>CE_AI_LMG</li>
             </weaponTags>
             <AllowWithRunAndGun>false</AllowWithRunAndGun>
         </Operation>
@@ -62,5 +68,160 @@
         </Operation>
 
 
+    <!-- AMAGun_SMG -->
+        <!-- onehand YES -->
+        <Operation Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="AMAGun_SMG"]/weaponTags</xpath>
+            <value>
+                <li>CE_OneHandedWeapon</li>
+            </value>
+        </Operation>    
 
+        <!-- power -->
+        <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+            <defName>AMAGun_SMG</defName>
+            <statBases>
+                <RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+                <SightsEfficiency>0.95</SightsEfficiency>
+                <ShotSpread>0.14</ShotSpread>
+                <SwayFactor>0.14</SwayFactor>
+                <Bulk>4.00</Bulk>
+                <Mass>2.50</Mass>
+            </statBases>
+            <Properties>
+                <recoilAmount>0.87</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_45ACP_AP</defaultProjectile>
+                <warmupTime>1.05</warmupTime>
+                <range>35</range>
+                <burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>11</ticksBetweenBurstShots>
+                <soundCast>Shot_HeavySMG</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </Properties>
+            <AmmoUser>
+                <magazineSize>26</magazineSize>
+                <reloadTime>3</reloadTime>
+                <ammoSet>AmmoSet_45ACP</ammoSet>
+            </AmmoUser>
+            <FireModes>
+                <aimedBurstShotCount>3</aimedBurstShotCount>
+                <aiUseBurstMode>TRUE</aiUseBurstMode>
+                <aiAimMode>Snapshot</aiAimMode>
+            </FireModes>
+            <weaponTags>
+                <li>AMASurplus</li>
+            </weaponTags>
+            <AllowWithRunAndGun>false</AllowWithRunAndGun>
+        </Operation>
+    
+        <Operation Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="AMAGPMG"]/tools</xpath>
+            <value>
+                <tools>
+                    <li Class="CombatExtended.ToolCE">
+                        <label>개머리판</label>
+                        <capacities>
+                            <li>Blunt</li>
+                        </capacities>
+                        <power>12</power>
+                        <cooldownTime>1.20</cooldownTime>
+                        <chanceFactor>1.5</chanceFactor>
+                        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                        <armorPenetrationSharp>0.5</armorPenetrationSharp>
+                        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+                </li>
+                </tools>
+            </value>
+        </Operation>
+
+    <!-- AMAGun_oldstyleSAW --> 
+
+        <!-- power -->
+        <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+            <defName>AMAGun_oldstyleSAW</defName>
+            <statBases>
+                <RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown> <!-- 발사 후 재사격 시간 -->
+                <SightsEfficiency>0.95</SightsEfficiency> <!-- 조준경 효율로 조준 시 명중보너스 -->
+                <ShotSpread>0.09</ShotSpread> <!-- 탄퍼짐 정도 상하좌우 반영되나 좌우가 큼 -->
+                <!-- m16a4 기준 0.07, PTRS같은 총은 0.01 -->
+                <SwayFactor>1.14</SwayFactor> <!-- 사격 중 흔들림 정도, 연발 점사에만 영향 -->
+                <Bulk>10.00</Bulk> <!-- CE 에서는 물건의 부피 수치가 있어야 밸런스가 조정되므로 부피 기입 필요 -->
+                <Mass>5.50</Mass> <!-- 무게는 바닐라 대비 같거나 낮게 해야함, 탄약 무게는 별도 -->
+            </statBases>
+            <Properties>
+                <recoilAmount>1.47</recoilAmount> <!-- 반동, 보통 상하 위치오차가 여기에서 결정됨 -->
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass> 
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_762x39mmSoviet_FMJ</defaultProjectile> <!-- 기본 탄 종류, 20mm이상 고구경탄은 FMJ가 없으니 AP탄을 기본으로 해야함 -->
+                <warmupTime>1.00</warmupTime>  <!-- 사격전 준비시간 -->
+                <range>52</range> 
+                <burstShotCount>8</burstShotCount> <!-- 자동 사격시 탄수 -->
+                <ticksBetweenBurstShots>11</ticksBetweenBurstShots> <!-- 차단 속도, RPM -->
+                <soundCast>Shot_HeavySMG</soundCast> 
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </Properties>
+            <AmmoUser>
+                <magazineSize>24</magazineSize> <!-- 1탄창당 탄약-->
+                <reloadTime>4</reloadTime> <!-- 재장전 시간 -->
+                <ammoSet>AmmoSet_762x54mmR</ammoSet> <!-- 가능한 탄 종류 -->
+            </AmmoUser>
+            <FireModes>
+                <aimedBurstShotCount>3</aimedBurstShotCount> <!-- 점사시 탄 발사횟수 -->
+                <aiUseBurstMode>FALSE</aiUseBurstMode> <!-- AI가 점사하는지 -->
+                <aiAimMode>Snapshot</aiAimMode> <!-- aimedShot은 AI 조준사격, snapshot은 지향사격을 AI가 기본으로 한다는 의미 -->
+            </FireModes>
+
+            <!-- AI treat this item as -->
+            <weaponTags>
+                <li>IndustrialGunAdvanced</li>
+                <li>CE_AI_AR</li>
+                <li>AMASurplus</li>
+            </weaponTags>
+            <AllowWithRunAndGun>false</AllowWithRunAndGun>
+        </Operation>
+        
+        <!-- Get from CE_guns AKM melee dmg -->
+        <Operation Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="AMAGun_oldstyleSAW"]/tools</xpath>
+            <value>
+                <tools>
+                    <li Class="CombatExtended.ToolCE">
+                        <label>stock</label>
+                        <capacities>
+                            <li>Blunt</li>
+                        </capacities>
+                        <power>8</power>
+                        <cooldownTime>1.55</cooldownTime>
+                        <chanceFactor>1.5</chanceFactor>
+                        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+                    </li>
+                    <li Class="CombatExtended.ToolCE">
+                        <label>barrel</label>
+                        <capacities>
+                            <li>Blunt</li>
+                        </capacities>
+                        <power>5</power>
+                        <cooldownTime>2.02</cooldownTime>
+                        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+                        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+                    </li>
+                    <li Class="CombatExtended.ToolCE">
+                        <label>muzzle</label>
+                        <capacities>
+                            <li>Poke</li>
+                        </capacities>
+                        <power>8</power>
+                        <cooldownTime>1.55</cooldownTime>
+                        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+                    </li>
+                </tools>
+            </value>
+        </Operation>
+    
 </Patch>
