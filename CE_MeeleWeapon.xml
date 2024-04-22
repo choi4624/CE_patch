@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <!-- onehand or not use this 
+    <Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="AMAMelee_Dadao"]/weaponTags</xpath>
+		<value>
+			<li>CE_OneHandedWeapon</li>
+		</value>
+	</Operation> -->
+
+    <!-- AMAMelee_Dadao -->
+        <!-- power -->
+        <Operation Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="AMAMelee_Dadao"]/tools</xpath>
+            <value>
+                <tools>
+                    <li Class="CombatExtended.ToolCE">
+                        <label>handle</label>
+                        <capacities>
+                            <li>Poke</li>
+                        </capacities>
+                        <power>2</power>
+                        <chanceFactor>0.1</chanceFactor>
+                        <cooldownTime>1.5</cooldownTime>
+                        <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+                        <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+                    </li>
+                    <li Class="CombatExtended.ToolCE">
+                        <label>edge</label>
+                        <capacities>
+                            <li>Cut</li>
+                        </capacities>
+                        <power>20</power>
+                        <cooldownTime>2.3</cooldownTime>
+                        <armorPenetrationBlunt>1.5</armorPenetrationBlunt>
+                        <armorPenetrationSharp>3</armorPenetrationSharp>
+                        <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+                    </li>
+                    <li Class="CombatExtended.ToolCE">
+                        <label>point</label>
+                        <capacities>
+                            <li>Stab</li>
+                        </capacities>
+                        <power>25</power>
+                        <cooldownTime>3.0</cooldownTime>
+                        <armorPenetrationBlunt>1.1</armorPenetrationBlunt>
+                        <armorPenetrationSharp>4</armorPenetrationSharp>
+                    </li>
+                </tools>
+            </value>
+        </Operation>
+
+    <!-- bluk and mass -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="AMAMelee_Dadao"]/statBases</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="AMAMelee_Dadao"]</xpath>
+            <value>
+                <statBases />
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AMAMelee_Dadao"]/statBases/Mass</xpath>
+		<value>
+			<Mass>3.5</Mass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="AMAMelee_Dadao"]/statBases</xpath>
+		<value>
+			<Bulk>4</Bulk>
+			<MeleeCounterParryBonus>0.58</MeleeCounterParryBonus>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMAMelee_Dadao"]</xpath>
+        <value>
+            <equippedStatOffsets>
+                <MeleeCritChance>0.30</MeleeCritChance>
+                <MeleeParryChance>0.30</MeleeParryChance>
+                <MeleeDodgeChance>0.30</MeleeDodgeChance>
+            </equippedStatOffsets>
+        </value>
+    </Operation>
+        
+
+
+
+</Patch>
