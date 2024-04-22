@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <!-- AMAGPMG -->
+        <!-- power -->
+        <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+            <defName>AMAGPMG</defName>
+            <statBases>
+                <RangedWeapon_Cooldown>2.4</RangedWeapon_Cooldown>
+                <SightsEfficiency>0.65</SightsEfficiency>
+                <ShotSpread>0.34</ShotSpread>
+                <SwayFactor>1.54</SwayFactor>
+                <Bulk>16.00</Bulk>
+                <Mass>18.20</Mass>
+            </statBases>
+            <Properties>
+                <recoilAmount>3.57</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
+                <warmupTime>2.05</warmupTime>
+                <range>60</range>
+                <burstShotCount>4</burstShotCount>
+                <ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+                <soundCast>AMAGPMGShot</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </Properties>
+            <AmmoUser>
+                <magazineSize>12</magazineSize>
+                <reloadTime>6</reloadTime>
+                <ammoSet>AmmoSet_50BMG</ammoSet>
+            </AmmoUser>
+            <FireModes>
+                <aimedBurstShotCount>2</aimedBurstShotCount>
+                <aiUseBurstMode>TRUE</aiUseBurstMode>
+                <aiAimMode>Snapshot</aiAimMode>
+            </FireModes>
+            <weaponTags>
+                <li>AMAHeavy</li>
+            </weaponTags>
+            <AllowWithRunAndGun>false</AllowWithRunAndGun>
+        </Operation>
+    
+        <Operation Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="AMAGPMG"]/tools</xpath>
+            <value>
+                <tools>
+                    <li Class="CombatExtended.ToolCE">
+                        <label>stock</label>
+                        <capacities>
+                            <li>Blunt</li>
+                        </capacities>
+                        <power>12</power>
+                        <cooldownTime>2.80</cooldownTime>
+                        <chanceFactor>1.5</chanceFactor>
+                        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                        <armorPenetrationSharp>0.5</armorPenetrationSharp>
+                        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+                </li>
+                </tools>
+            </value>
+        </Operation>
+
+
+
+</Patch>
