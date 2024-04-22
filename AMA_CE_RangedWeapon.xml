@@ -302,19 +302,19 @@
             <defName>AMAGun_RecoillessGun</defName>
             <statBases>
                 <RangedWeapon_Cooldown>3.1</RangedWeapon_Cooldown>
-                <SightsEfficiency>1.05</SightsEfficiency>
-                <ShotSpread>0.11</ShotSpread>
-                <SwayFactor>4.80</SwayFactor>
+                <SightsEfficiency>2.05</SightsEfficiency>
+                <ShotSpread>0.31</ShotSpread>
                 <Bulk>25.70</Bulk>
                 <Mass>17.50</Mass>
             </statBases>
             <Properties>
-                <recoilAmount>6.87</recoilAmount>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Bullet_HERound</defaultProjectile>
-                <warmupTime>4.55</warmupTime>
-                <range>75</range>
+                <defaultProjectile>Base90mmRecoillessBullet</defaultProjectile>
+                <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+                <warmupTime>2.55</warmupTime>
+                <minRange>8</minRange>
+                <range>85</range>
                 <burstShotCount>1</burstShotCount>
                 <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
                 <ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
@@ -328,11 +328,12 @@
             </Properties>
             <AmmoUser>
                 <magazineSize>1</magazineSize>
-                <reloadTime>15</reloadTime>
-                <ammoSet>AmmoSet_81mmMortarShell</ammoSet>
+                <reloadTime>5.5</reloadTime>
+                <ammoSet>AmmoSet_90mmRecoilless</ammoSet>
             </AmmoUser>
             <FireModes>
-                <aiAimMode>Snapshot</aiAimMode>
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiAimMode>AimedShot</aiAimMode>
             </FireModes>
             <weaponTags>
                 <li>AMASurplus</li>
