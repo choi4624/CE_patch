@@ -89,6 +89,163 @@
     </Operation>
         
 
+    <!-- AMAMelee_Katana -->
+        <!-- power -->
+        <Operation Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="AMAMelee_Katana"]/tools</xpath>
+            <value>
+                <tools>
+                    <li Class="CombatExtended.ToolCE">
+                        <label>handle</label>
+                        <capacities>
+                            <li>Poke</li>
+                        </capacities>
+                        <power>2</power>
+                        <chanceFactor>0.1</chanceFactor>
+                        <cooldownTime>1.5</cooldownTime>
+                        <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+                        <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+                    </li>
+                    <li Class="CombatExtended.ToolCE">
+                        <label>edge</label>
+                        <capacities>
+                            <li>Cut</li>
+                        </capacities>
+                        <power>10</power>
+                        <cooldownTime>0.9</cooldownTime>
+                        <armorPenetrationBlunt>1.0</armorPenetrationBlunt>
+                        <armorPenetrationSharp>2</armorPenetrationSharp>
+                        <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+                    </li>
+                    <li Class="CombatExtended.ToolCE">
+                        <label>point</label>
+                        <capacities>
+                            <li>Stab</li>
+                        </capacities>
+                        <power>15</power>
+                        <cooldownTime>1.0</cooldownTime>
+                        <armorPenetrationBlunt>0.8</armorPenetrationBlunt>
+                        <armorPenetrationSharp>3</armorPenetrationSharp>
+                    </li>
+                </tools>
+            </value>
+        </Operation>
+
+    <!-- bluk and mass -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="AMAMelee_Katana"]/statBases</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="AMAMelee_Katana"]</xpath>
+            <value>
+                <statBases />
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AMAMelee_Katana"]/statBases/Mass</xpath>
+		<value>
+			<Mass>1.5</Mass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="AMAMelee_Katana"]/statBases</xpath>
+		<value>
+			<Bulk>5</Bulk>
+			<MeleeCounterParryBonus>0.48</MeleeCounterParryBonus>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMAMelee_Katana"]</xpath>
+        <value>
+            <equippedStatOffsets>
+                <MeleeCritChance>0.30</MeleeCritChance>
+                <MeleeParryChance>0.30</MeleeParryChance>
+                <MeleeDodgeChance>0.30</MeleeDodgeChance>
+            </equippedStatOffsets>
+        </value>
+    </Operation>
+
+    <!-- AMAMelee_Nodachi -->
+        <!-- power -->
+        <Operation Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="AMAMelee_Nodachi"]/tools</xpath>
+            <value>
+                <tools>
+                    <li Class="CombatExtended.ToolCE">
+                        <label>handle</label>
+                        <capacities>
+                            <li>Poke</li>
+                        </capacities>
+                        <power>2</power>
+                        <chanceFactor>0.1</chanceFactor>
+                        <cooldownTime>1.5</cooldownTime>
+                        <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+                        <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+                    </li>
+                    <li Class="CombatExtended.ToolCE">
+                        <label>edge</label>
+                        <capacities>
+                            <li>Cut</li>
+                        </capacities>
+                        <power>21</power>
+                        <cooldownTime>2.7</cooldownTime>
+                        <armorPenetrationBlunt>1.0</armorPenetrationBlunt>
+                        <armorPenetrationSharp>4.5</armorPenetrationSharp>
+                        <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+                    </li>
+                    <li Class="CombatExtended.ToolCE">
+                        <label>point</label>
+                        <capacities>
+                            <li>Stab</li>
+                        </capacities>
+                        <power>15</power>
+                        <cooldownTime>3.0</cooldownTime>
+                        <armorPenetrationBlunt>1.5</armorPenetrationBlunt>
+                        <armorPenetrationSharp>5.5</armorPenetrationSharp>
+                    </li>
+                </tools>
+            </value>
+        </Operation>
+
+    <!-- bluk and mass -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="AMAMelee_Nodachi"]/statBases</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="AMAMelee_Nodachi"]</xpath>
+            <value>
+                <statBases />
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AMAMelee_Nodachi"]/statBases/Mass</xpath>
+		<value>
+			<Mass>4.5</Mass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="AMAMelee_Nodachi"]/statBases</xpath>
+		<value>
+			<Bulk>3</Bulk>
+			<MeleeCounterParryBonus>0.48</MeleeCounterParryBonus>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AMAMelee_Nodachi"]</xpath>
+        <value>
+            <equippedStatOffsets>
+                <MeleeCritChance>0.20</MeleeCritChance>
+                <MeleeParryChance>0.40</MeleeParryChance>
+                <MeleeDodgeChance>0.40</MeleeDodgeChance>
+            </equippedStatOffsets>
+        </value>
+    </Operation>
 
 
 </Patch>
