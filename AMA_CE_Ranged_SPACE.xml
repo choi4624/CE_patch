@@ -361,7 +361,7 @@
 
         <!-- power -->
         <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
-            <defName>AMAGun_SmartECGPMG</defName>
+            <defName>AMAGun_ElectroCharger</defName>
             <statBases>
                 <RangedWeapon_Cooldown>3.3</RangedWeapon_Cooldown> 
                 <SightsEfficiency>2.65</SightsEfficiency>
@@ -408,7 +408,7 @@
         
         <!-- melee dmg -->
         <Operation Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="AMAGun_SmartECGPMG"]/tools</xpath>
+            <xpath>Defs/ThingDef[defName="AMAGun_ElectroCharger"]/tools</xpath>
             <value>
                 <tools>
                     <li Class="CombatExtended.ToolCE">
