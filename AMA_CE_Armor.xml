@@ -10,7 +10,7 @@
     </Operation>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="AMACNMeleeArmor"]/statBases/ArmorRating_Sharp</xpath>
+        <xpath>Defs/ThingDef[defName="AMACNMeleeArmor"]/statBases</xpath>
         <value>
             <ArmorRating_Sharp>8</ArmorRating_Sharp>
             <ArmorRating_Blunt>12</ArmorRating_Blunt>
@@ -28,7 +28,7 @@
     </Operation>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="AMACNBandolier"]/statBases/ArmorRating_Sharp</xpath>
+        <xpath>Defs/ThingDef[defName="AMACNBandolier"]/statBases</xpath>
         <value>
             <ArmorRating_Sharp>2</ArmorRating_Sharp>
             <ArmorRating_Blunt>4</ArmorRating_Blunt>
@@ -70,7 +70,7 @@
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="AMAKRSuspender"]/statBases/ArmorRating_Sharp</xpath>
+        <xpath>Defs/ThingDef[defName="AMAKRSuspender"]/statBases</xpath>
         <value>
             <ArmorRating_Sharp>2</ArmorRating_Sharp>
             <ArmorRating_Blunt>4</ArmorRating_Blunt>
@@ -175,7 +175,7 @@
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="AMAJPFlakVest"]/statBases/ArmorRating_Sharp</xpath>
+        <xpath>Defs/ThingDef[defName="AMAJPFlakVest"]/statBases</xpath>
         <value>
             <ArmorRating_Sharp>10</ArmorRating_Sharp>
             <ArmorRating_Blunt>14</ArmorRating_Blunt>
@@ -194,7 +194,7 @@
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="AMAJPEliteArmor"]/statBases/ArmorRating_Sharp</xpath>
+        <xpath>Defs/ThingDef[defName="AMAJPEliteArmor"]/statBases</xpath>
         <value>
             <ArmorRating_Sharp>14</ArmorRating_Sharp>
             <ArmorRating_Blunt>12</ArmorRating_Blunt>
